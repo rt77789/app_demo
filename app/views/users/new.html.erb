@@ -1,0 +1,19 @@
+
+
+<%= form_for @user, :url => { :controller => 'users', :action => 'create' } do |f| %>
+	<%= flash[:notice] %>
+	<br />
+	<%= f.label :username, "username" %>
+	<%= f.text_field :username %>
+	<br />
+	<%= f.label :password, "password" %>
+	<%= f.password_field :password%>
+
+	<br />
+	<%= f.label :password_verify, "password_verify" %>
+	<%= f.password_field :password_verify%>
+
+	<br />
+
+	<%= f.submit "Create" %>
+<% end %>
