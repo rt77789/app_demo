@@ -1,6 +1,7 @@
 
 <% @users.each do |user| %>
-	<%= user.username %> <br/ >
-	<%= user.password%> <br/ >
-	<%= user.salt%> <br/ >
+	username: <%= user.username %> <br/ >
+	hash_password: <%= user.hash_password%> <br/ >
+	salt: <%= user.salt%> <br/ >
+	<%= '-' * 152 %> <br />
 <% end %>

@@ -1,7 +1,8 @@
 
 
 <%= form_for @user, :url => { :controller => 'users', :action => 'create' } do |f| %>
-	<%= flash[:notice] %>
+	notice: <%= flash[:notice] %> <br / >
+	username: <%= flash[:notice] %> <br />
 	<br />
 	<%= f.label :username, "username" %>
 	<%= f.text_field :username %>
